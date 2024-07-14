@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane accessibleRole="INCREMENT_BUTTON" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="316.0" style="-fx-background-color: #111111; -fx-background-radius: 50;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.diegoalvarez.main.FXMLDocumentController">
+   <children>
+      <GridPane layoutX="18.0" layoutY="119.0" prefHeight="371.0" prefWidth="291.0" style="-fx-background-radius: 30;">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnMasMenos" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #ACACAC;" text="+/-" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnCero" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #3E3E3E;" text="0" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnPunto" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #3E3E3E;" text="." textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnIgual" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #D35400;" text="=" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnUno" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #3E3E3E;" text="1" textFill="WHITE" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnDos" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #3E3E3E;" text="2" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnTres" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #3E3E3E;" text="3" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnMas" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #D35400;" text="+" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnCuatro" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #3E3E3E;" text="4" textFill="WHITE" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnCinco" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #3E3E3E;" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnSeis" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #3E3E3E;" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnMenos" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #D35400;" text="-" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnSiete" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #3E3E3E;" text="7" textFill="WHITE" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnOcho" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #3E3E3E;" text="8" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnNueve" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #3E3E3E;" text="9" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnMulti" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #D35400;" text="x" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnUnoX" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #ACACAC;" text="⅟x" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnCuadrado" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #ACACAC;" text="x²" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnRaiz" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #ACACAC;" text="²√x " GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font></Button>
+            <Button fx:id="btnDiv" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #D35400;" text="÷" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnPorcentaje" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #ACACAC;" text="\%" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnCE" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #ACACAC;" text="CE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnC" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 30; -fx-background-color: #ACACAC;" text="C" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font></Button>
+            <ImageView fx:id="btnLogo" accessibleRole="BUTTON" cache="true" fitHeight="50.0" fitWidth="60.0" onDragDetected="#handleButtonAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../images/Cerrar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <TextField fx:id="txtPantalla" alignment="CENTER_RIGHT" layoutX="8.0" layoutY="44.0" prefHeight="64.0" prefWidth="301.0" promptText="0" style="-fx-background-color: #B3B6B7; -fx-background-radius: 30;">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </TextField>
+      <MenuBar layoutY="-1.0" style="-fx-background-color: #B3B6B7; -fx-background-radius: 30;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Calculadora">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Convensor">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="?">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
